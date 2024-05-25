@@ -20,37 +20,32 @@ The project includes a Raspberry Pi image with the neural network and supporting
 
 # Installation
 
-Download the NeuralMesh-Pi-Network image from the GitHub repository.
-Write the image to an SD card using a tool such as Etcher.
-Insert the SD card into the Raspberry Pi and power it on.
-Wait for the system to boot and the web interface to load.
-Use the web interface to upload 2D images and generate 3D meshes.
-Usage
-
-Open a web browser and navigate to the NeuralMesh-Pi-Network web interface.
-Click the "Choose File" button and select a 2D image.
-Click the "Generate Mesh" button to generate a 3D mesh.
-Download the 3D mesh as an STL file.
-Use a 3D printer to print the object.
+1. Download the NeuralMesh-Pi-Network image from the GitHub repository.
+2. Write the image to an SD card using a tool such as Etcher.
+3. Insert the SD card into the Raspberry Pi and power it on.
+4. Wait for the system to boot and the web interface to load.
+5. Use the web interface to upload 2D images and generate 3D meshes.
 
 # Usage
 
-Open a web browser and navigate to the NeuralMesh-Pi-Network web interface.
-Click the "Choose File" button and select a 2D image.
-Click the "Generate Mesh" button to generate a 3D mesh.
-Download the 3D mesh as an STL file.
-Use a 3D printer to print the object.
-Training
+1. Open a web browser and navigate to the NeuralMesh-Pi-Network web interface.
+2. Click the "Choose File" button and select a 2D image.
+3. Click the "Generate Mesh" button to generate a 3D mesh.
+4. Download the 3D mesh as an STL file.
+5. Use a 3D printer to print the object.
+
+## Training
 
 The neural network can be trained on a larger dataset of 2D images and corresponding 3D meshes. The training process can be run on a more powerful computer and the trained model can be transferred to the Raspberry Pi.
 
-Collect a dataset of 2D images and corresponding 3D meshes.
-Preprocess the dataset and split it into training, validation, and test sets.
-Train the neural network on the training set.
-Evaluate the neural network on the validation set.
-Save the trained model.
-Transfer the trained model to the Raspberry Pi.
-Contributing
+1. Collect a dataset of 2D images and corresponding 3D meshes.
+2. Preprocess the dataset and split it into training, validation, and test sets.
+3. Train the neural network on the training set.
+4. Evaluate the neural network on the validation set.
+5. Save the trained model.
+6. Transfer the trained model to the Raspberry Pi.
+
+# Contributing
 
 Contributions to NeuralMesh-Pi-Network are welcome! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request.
 
