@@ -1,7 +1,8 @@
 # NeuralMesh-Pi-Network
+
 The NeuralMesh-Pi-Network repository is a comprehensive resource for developers interested in building the next-generation Pi network. The repository includes detailed documentation, source code, and tools for building and deploying the NeuralMesh Pi network.
 
-# *NeuralMesh-Pi-Network* NeuralMesh-Pi-Network is a machine learning project that uses a neural network to generate 3D meshes for 3D printing. The project is designed to run on a Raspberry Pi, making it accessible and affordable for hobbyists and educators.
+# *NeuralMesh-Pi-Network* : NeuralMesh-Pi-Network is a machine learning project that uses a neural network to generate 3D meshes for 3D printing. The project is designed to run on a Raspberry Pi, making it accessible and affordable for hobbyists and educators.
 
 # Overview
 
@@ -66,3 +67,44 @@ NeuralMesh-Pi-Network was inspired by the work of NVIDIA Research and Google Res
 For questions or comments, please contact info@neuralmesh_pi_network.com.
 
 This package uses Flask and Factory Boy to provide a web interface for uploading images and generating 3D meshes. It also uses pytest for testing.
+
+## Here's a simple example of how to use the package:
+
+```python
+1.
+2. from neuralmesh_pi_network import create_app
+3. 
+4. app = create_app()
+5. 
+6. if __name__ == "__main__":
+7.    app.run(debug=True)
+```
+In this example, create_app is a function that initializes the Flask application and Factory Boy factory. The application is then run in debug mode.
+
+## To test the package, you can use pytest:
+
+```bash
+1. 
+2. $ pytest neuralmesh_pi_network
+```
+
+This command will run all the tests in the neuralmesh_pi_network package.
+
+Note: You will need to install the necessary dependencies using pip:
+
+```bash
+1. 
+2. $ pip install pytest flask factory-boy pytest-flask pytest-factoryboy
+```
+
+## To train the neural network on a new dataset, you can use the following code:
+
+```python
+1. 
+2. from neuralmesh_pi_network import train_model
+3. 
+4. # Assuming 'dataset' is a preprocessed dataset and 'output_model_path' is the path to save the trained model
+5. model = train_model(dataset, output_model_path)
+```
+
+This function will train the neural network on the given dataset and save the trained model to the specified output path.
