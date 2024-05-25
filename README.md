@@ -71,40 +71,36 @@ This package uses Flask and Factory Boy to provide a web interface for uploading
 ## Here's a simple example of how to use the package:
 
 ```python
-1.
-2. from neuralmesh_pi_network import create_app
-3. 
-4. app = create_app()
-5. 
-6. if __name__ == "__main__":
-7.    app.run(debug=True)
+1. from neuralmesh_pi_network import create_app
+2. 
+3. app = create_app()
+4. 
+5. if __name__ == "__main__":
+6.    app.run(debug=True)
 ```
 In this example, create_app is a function that initializes the Flask application and Factory Boy factory. The application is then run in debug mode.
 
 ## To test the package, you can use pytest:
 
-```bash
-1. 
-2. $ pytest neuralmesh_pi_network
+```bash 
+1. $ pytest neuralmesh_pi_network
 ```
 
 This command will run all the tests in the neuralmesh_pi_network package.
 
 Note: You will need to install the necessary dependencies using pip:
 
-```bash
-1. 
-2. $ pip install pytest flask factory-boy pytest-flask pytest-factoryboy
+```bash 
+1. $ pip install pytest flask factory-boy pytest-flask pytest-factoryboy
 ```
 
 ## To train the neural network on a new dataset, you can use the following code:
 
 ```python
-1. 
-2. from neuralmesh_pi_network import train_model
-3. 
-4. # Assuming 'dataset' is a preprocessed dataset and 'output_model_path' is the path to save the trained model
-5. model = train_model(dataset, output_model_path)
+1. from neuralmesh_pi_network import train_model
+2. 
+3. # Assuming 'dataset' is a preprocessed dataset and 'output_model_path' is the path to save the trained model
+4. model = train_model(dataset, output_model_path)
 ```
 
 This function will train the neural network on the given dataset and save the trained model to the specified output path.
